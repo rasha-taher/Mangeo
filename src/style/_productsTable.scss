@@ -1,0 +1,51 @@
+.productsTable{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+}
+.headerInTable{
+    display: flex;
+    justify-content: space-between;
+    .tableTitle{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .optionToSell{
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #f8f8f9;
+        border: none;
+        font-size: 17px;
+        
+    }
+    .addProductBtn{
+        @extend .optionToSell;
+        background-color: #b69cff;
+        color: white;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+}
+
+.theTable{
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    td{
+        padding: 5px;
+    }
+     thead tr {
+        border-bottom: 5px solid rgb(7, 5, 5);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .itemImageInTable{
+        width: 85px;
+        height: 90px;
+        border-radius: 10px;
+    }
+}

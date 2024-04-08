@@ -1,0 +1,39 @@
+.middlePart {
+  background-color: hsl(240 5.9% 90%);
+  height: 100vh;
+  width: 85%;
+}
+.header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.inputContainer{
+  border: 1px solid darkgray;
+  height: 40px;
+  width: 350px;
+  border-radius: 8px;
+  padding: 5px;
+  @include flexDisplay(row);
+  .searchIconContainer{
+    background-color: $orangeColor;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    @include centerElement;
+  }
+  i{
+    color: white;
+    font-size: 20px;
+  }
+  input{
+    border: none;
+    height: 100%;
+    width: 100%;
+    margin:0 0 0 10px;
+
+  }
+}

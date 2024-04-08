@@ -1,0 +1,140 @@
+.bodyContainer {
+  padding: 10px;
+  @include flexDisplay(column);
+  width: 100%;
+  .topContainers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+  }
+  .chart {
+    padding: 10px;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    p {
+      color: $orangeColor;
+      font-weight: 600;
+      font-size: 18px;
+      margin: $marginValue;
+    }
+    .totalRevenue {
+      font-size: 28px;
+      color: black;
+    }
+    .percentageRevenue {
+      font-size: 16px;
+      color: $coolGreen;
+      margin-left: 5px;
+      margin-top: 20px;
+    }
+    div {
+      display: flex;
+    }
+  }
+  .bottomContainers {
+    @extend .topContainers;
+    height: 60%;
+  }
+}
+
+.otherHeaderDetail {
+  display: flex;
+  flex-direction: row;
+  i {
+    color: $orangeColor;
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  p {
+    font-size: 20px;
+    color: darkgray;
+    margin-top: 5px;
+  }
+  .bi-caret-down-fill {
+    margin-left: -3px;
+  }
+  .letterCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $orangeColor;
+    @include centerElement;
+    font-size: 25px;
+    color: white;
+    margin: 0 10px;
+  }
+}
+
+.overView {
+  width: 50%;
+  .divsContainer {
+    height: 50%;
+    margin: 0 0 10px 10px;
+    display: flex;
+    .singleSquare {
+      width: 50%;
+      background-color: white;
+      height: 95%;
+      margin-left: 10px;
+      border-radius: 10px;
+      padding: 10px;
+      .currencyContainer{
+        border-radius: 10px;
+        background-color: $coolGreen;
+        height: 50px;
+        width: 50px;
+        @include centerElement;
+        i{
+          font-size: 30px;
+          color: white;
+        }
+      }
+      p{
+        font-size: 25px;
+
+      }
+      .percentageRevenue{
+        color: $coolGreen;
+        font-size: 15px;
+        margin-top: 7px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+      }
+      .flex{
+        display: flex;
+      }
+    }
+    .firstSquare {
+      background-color: $orangeColor;
+      color: white;
+    }
+  }
+}
+.pushToEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+.bagContainer {
+  background-color: #e09e60;
+  @include centerElement;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  i {
+    color: white;
+    font-size: 35px;
+  }
+}
+
+.firstSquare {
+    font-size: 18px;
+  p {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}

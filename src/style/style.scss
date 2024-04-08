@@ -1,0 +1,24 @@
+@import "./variables";
+@import "./sideMenuBar";
+@import "./middlePart";
+@import "./insideMiddlePart";
+@import "./productsTable";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  @include flexDisplay(row);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}

@@ -1,0 +1,33 @@
+$orangeColor: #ffa14a;
+$darkShade: #181025;
+$marginValue: 10px 0;
+$randomPurple:#b69cff;
+$coolGreen :#8ac389;
+@mixin flexDisplay($direction){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes glowing {
+    0% {
+        background-color: $randomPurple;
+        box-shadow: 0 0 3px $randomPurple;
+    }
+    50% {
+        background-color: #b99fff;
+        box-shadow: 0 0 10px #b99fff;
+    }
+    100% {
+        background-color: $randomPurple;
+        box-shadow: 0 0 3px $randomPurple;
+    }
+}
+
+@mixin centerElement{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
